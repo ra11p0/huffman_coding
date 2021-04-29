@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace decompressor_wpf
 {
-    public partial class Compressing : Form
+    public partial class huffmanCoding : Form
     {
         string about = "Huffman coding algorithm.\n" +
                        "Przemysław Lenczewski.\n" +
@@ -18,7 +18,7 @@ namespace decompressor_wpf
                        "29 april 2021";
         List<word> definedWords = new List<word>();
 
-        public Compressing()
+        public huffmanCoding()
         {
             InitializeComponent();
         }

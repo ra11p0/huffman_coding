@@ -1,7 +1,7 @@
 ﻿
 namespace decompressor_wpf
 {
-    partial class Compressing
+    partial class huffmanCoding
     {
         /// <summary>
         ///  Required designer variable.
@@ -45,10 +45,10 @@ namespace decompressor_wpf
             this.progressBar = new System.Windows.Forms.ProgressBar();
             this.progressBarLabel = new System.Windows.Forms.Label();
             this.infoBox = new System.Windows.Forms.GroupBox();
+            this.compressionRate = new System.Windows.Forms.Label();
             this.infoButton = new System.Windows.Forms.Button();
             this.numberOfBits = new System.Windows.Forms.Label();
             this.numberOfBitsLabel = new System.Windows.Forms.Label();
-            this.compressionRate = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.wordsGrid)).BeginInit();
             this.infoBox.SuspendLayout();
             this.SuspendLayout();
@@ -206,6 +206,15 @@ namespace decompressor_wpf
             this.infoBox.TabStop = false;
             this.infoBox.Text = "Information:";
             // 
+            // compressionRate
+            // 
+            this.compressionRate.AutoSize = true;
+            this.compressionRate.Location = new System.Drawing.Point(7, 30);
+            this.compressionRate.Name = "compressionRate";
+            this.compressionRate.Size = new System.Drawing.Size(106, 15);
+            this.compressionRate.TabIndex = 3;
+            this.compressionRate.Text = "Compression rate: ";
+            // 
             // infoButton
             // 
             this.infoButton.Location = new System.Drawing.Point(444, 102);
@@ -234,16 +243,7 @@ namespace decompressor_wpf
             this.numberOfBitsLabel.TabIndex = 0;
             this.numberOfBitsLabel.Text = "Size of output:";
             // 
-            // compressionRate
-            // 
-            this.compressionRate.AutoSize = true;
-            this.compressionRate.Location = new System.Drawing.Point(7, 30);
-            this.compressionRate.Name = "compressionRate";
-            this.compressionRate.Size = new System.Drawing.Size(106, 15);
-            this.compressionRate.TabIndex = 3;
-            this.compressionRate.Text = "Compression rate: ";
-            // 
-            // Compressing
+            // huffmanCoding
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -264,7 +264,7 @@ namespace decompressor_wpf
             this.Controls.Add(this.wordSizeBox);
             this.MaximumSize = new System.Drawing.Size(816, 489);
             this.MinimumSize = new System.Drawing.Size(816, 489);
-            this.Name = "Compressing";
+            this.Name = "huffmanCoding";
             this.Text = "Compressing";
             ((System.ComponentModel.ISupportInitialize)(this.wordsGrid)).EndInit();
             this.infoBox.ResumeLayout(false);
